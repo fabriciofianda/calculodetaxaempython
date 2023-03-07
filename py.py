@@ -4,6 +4,10 @@ while loop == 1:
     sacar = input("Digite o montante a sacar...")
     if (sacar.isdigit()):
         saque = float(sacar)
+    else:
+        print("Digite um valor valido {} nao pode ser declarado...".format(sacar))
+        input("Aperte qualquer tecla para continuar...")
+        continue
     print("___________________________________________")
     metodo = int(input("Digite o metodo [1] Pix [2] Maquininha de Cartao ...."))
 
